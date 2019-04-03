@@ -1,0 +1,1455 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07f144b8fc7565d76",
+                    "InstanceId": "i-07cafea4a6806915f",
+                    "InstanceType": "m4.xlarge",
+                    "KeyName": "EDB-Postgres1-key",
+                    "LaunchTime": "2019-01-02T09:41:09.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-132.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.132",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0fefb90f3f227eb88",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:41:10.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0b33f05a45926758c"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdb",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:41:10.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-00675c6a2f56a250a"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdc",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:41:10.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0454fc30e04879f4c"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdd",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:41:10.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-02d15e203e8664259"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sde",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:41:10.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-06d938bb2ad8c93fa"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdf",
+                            "Ebs": {
+                                "AttachTime": "2019-03-22T13:25:13.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-01350989989c47d5c"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2019-01-02T09:41:09.000Z",
+                                "AttachmentId": "eni-attach-0d11c9915243943a3",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": " PEM-SG",
+                                    "GroupId": "sg-0cf212e32c180ec2f"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:d3:6c:07:6a:e8",
+                            "NetworkInterfaceId": "eni-080e41626a7c49752",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-132.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.132",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-132.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.132"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0fefb90f3f227eb88",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": " PEM-SG",
+                            "GroupId": "sg-0cf212e32c180ec2f"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        },
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        },
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "PEM"
+                        },
+                        {
+                            "Key": "Cost",
+                            "Value": "PEM"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-0f2eea9e7241dec2b"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-00475572c1608948d",
+                    "InstanceId": "i-015969b30b1431178",
+                    "InstanceType": "m4.xlarge",
+                    "KeyName": "mongodb-master",
+                    "LaunchTime": "2019-02-01T12:18:28.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-37.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.37",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0de32cc6a109bbce4",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2019-02-01T12:18:29.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0bb8a1cc796842f18"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2019-02-01T12:18:28.000Z",
+                                "AttachmentId": "eni-attach-0ac5f07e897630cff",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "nse-uat-mongomaster-SG",
+                                    "GroupId": "sg-0930b16022df90ca6"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:6e:1d:71:88:b2",
+                            "NetworkInterfaceId": "eni-09abf67ae8fb4a4c7",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-37.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.37",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-37.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.37"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0de32cc6a109bbce4",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "nse-uat-mongomaster-SG",
+                            "GroupId": "sg-0930b16022df90ca6"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        },
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        },
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "NSE-UAT-MongoMaster"
+                        },
+                        {
+                            "Key": "Cost",
+                            "Value": "NSE-UAT-MongoMaster"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-0bd92af676411babc"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07f144b8fc7565d76",
+                    "InstanceId": "i-04ea8d0fe9cc495ee",
+                    "InstanceType": "m4.xlarge",
+                    "KeyName": "mongodb-master",
+                    "LaunchTime": "2018-12-20T06:40:23.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-112.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.112",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0a72529bb2dd0c4f6",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T13:44:16.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-00b2610a409f210c5"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2018-12-19T13:44:15.000Z",
+                                "AttachmentId": "eni-attach-07a19b7c99eab9077",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "nse-uat-mongoslave-1",
+                                    "GroupId": "sg-0fc04b03d1f52ec07"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:65:03:48:84:3e",
+                            "NetworkInterfaceId": "eni-054de103b21ef374c",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-112.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.112",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-112.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.112"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0a72529bb2dd0c4f6",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "nse-uat-mongoslave-1",
+                            "GroupId": "sg-0fc04b03d1f52ec07"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Cost",
+                            "Value": "NSE-UAT-MongoReplica"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "NSE-UAT-MongoReplica"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        },
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        },
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-06e7cd34fd33f013c"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07f144b8fc7565d76",
+                    "InstanceId": "i-0da4a37192bf6ae9f",
+                    "InstanceType": "m5.2xlarge",
+                    "KeyName": "EDB-Postgres1-key",
+                    "LaunchTime": "2018-12-27T15:51:05.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-18.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.18",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0de32cc6a109bbce4",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2018-12-27T15:47:31.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-06ac95b82bb742355"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdb",
+                            "Ebs": {
+                                "AttachTime": "2018-12-27T15:47:31.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-04e3666be227fdef4"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdc",
+                            "Ebs": {
+                                "AttachTime": "2018-12-27T15:47:31.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-0c5fb2c1e3a54ef85"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdf",
+                            "Ebs": {
+                                "AttachTime": "2019-04-02T11:56:57.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-004a3224201d949ea"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2018-12-27T15:47:30.000Z",
+                                "AttachmentId": "eni-attach-0aa573f8e7723b87f",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "Process-Server-SG",
+                                    "GroupId": "sg-0b5ecc06a524caeee"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:77:9d:07:c8:10",
+                            "NetworkInterfaceId": "eni-0581a82c5394c918b",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-18.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.18",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-18.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.18"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0de32cc6a109bbce4",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "Process-Server-SG",
+                            "GroupId": "sg-0b5ecc06a524caeee"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        },
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        },
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "Process Server"
+                        },
+                        {
+                            "Key": "Cost",
+                            "Value": "Process Server"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-0d51990a2e47d9a13"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07f144b8fc7565d76",
+                    "InstanceId": "i-000355d651d51b475",
+                    "InstanceType": "m4.xlarge",
+                    "KeyName": "EDB-Postgres1-key",
+                    "LaunchTime": "2019-02-11T07:28:01.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-133.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.133",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0fefb90f3f227eb88",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T13:39:30.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0c74258772c68dfb7"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdf",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T14:04:43.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-00e51e66678f9a65d"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdg",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T14:05:01.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-05853cf93aed76ace"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdh",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T14:05:14.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-09b12c1c80addd3d3"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdi",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T14:05:26.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-06cb3231bdbe7ba4f"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2018-12-19T13:39:30.000Z",
+                                "AttachmentId": "eni-attach-0ec3c949d070c725a",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "EDB-Postgres1-SG",
+                                    "GroupId": "sg-016d043f6d11284be"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:b3:97:af:1a:42",
+                            "NetworkInterfaceId": "eni-0c23a84fbeed2e066",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-133.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.133",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-133.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.133"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0fefb90f3f227eb88",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "EDB-Postgres1-SG",
+                            "GroupId": "sg-016d043f6d11284be"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "NSE-UAT-EDB-Postgres1"
+                        },
+                        {
+                            "Key": "Cost",
+                            "Value": "NSE-UAT-EDB-Postgres1"
+                        },
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        },
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-0f0ed2418638e9f15"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07f144b8fc7565d76",
+                    "InstanceId": "i-0b8155d0c4fa3985e",
+                    "InstanceType": "m4.xlarge",
+                    "KeyName": "EDB-Postgres1-key",
+                    "LaunchTime": "2019-01-02T09:36:46.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-140.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.140",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0fefb90f3f227eb88",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:33:02.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0a7a3b9b9d89f891e"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdb",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:33:02.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0826bd79949614941"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdc",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:33:02.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0e6a1eb52869f105b"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2019-01-02T09:33:01.000Z",
+                                "AttachmentId": "eni-attach-0a83fe7a43aa60b74",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "BART-SG",
+                                    "GroupId": "sg-069b0ef122ce84321"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:cf:57:47:37:b4",
+                            "NetworkInterfaceId": "eni-0f5e7166d6d918666",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-140.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.140",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-140.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.140"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0fefb90f3f227eb88",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "BART-SG",
+                            "GroupId": "sg-069b0ef122ce84321"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Cost",
+                            "Value": "BART"
+                        },
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        },
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        },
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "BART"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-030518540fcc64481"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07f144b8fc7565d76",
+                    "InstanceId": "i-0277fcd07acd3f7c5",
+                    "InstanceType": "m4.xlarge",
+                    "KeyName": "mongodb-master",
+                    "LaunchTime": "2019-01-10T11:41:21.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-39.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.39",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0de32cc6a109bbce4",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2019-01-10T11:41:22.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0b160e143a987c67f"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2019-01-10T11:41:21.000Z",
+                                "AttachmentId": "eni-attach-0198e8b26e459424b",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "nse-uat-mongoslave-SG",
+                                    "GroupId": "sg-05fe95766fe99bdf7"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:11:b5:fd:3d:ba",
+                            "NetworkInterfaceId": "eni-01703c30491a4acc8",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-39.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.39",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-39.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.39"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0de32cc6a109bbce4",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "nse-uat-mongoslave-SG",
+                            "GroupId": "sg-05fe95766fe99bdf7"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Cost",
+                            "Value": "NSE-UAT-MongoReplica-2"
+                        },
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "NSE-UAT-MongoReplica-2"
+                        },
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        },
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-0369450372f6dd9e5"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07f144b8fc7565d76",
+                    "InstanceId": "i-0b03b6e7aab8aea76",
+                    "InstanceType": "m4.xlarge",
+                    "KeyName": "EDB-Postgres1-key",
+                    "LaunchTime": "2019-01-02T09:28:14.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-139.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.139",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0fefb90f3f227eb88",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:28:15.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0cad1628d2eca3054"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdb",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:28:15.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0ff06708559fe8402"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdc",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:28:15.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-016d077c4ec3a349f"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdd",
+                            "Ebs": {
+                                "AttachTime": "2019-01-02T09:28:15.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0ec4026ff14a4df0e"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2019-01-02T09:28:14.000Z",
+                                "AttachmentId": "eni-attach-064d2ab294bccbd07",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "PGBOUNCER-SG",
+                                    "GroupId": "sg-0b4e539a196bb1d88"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:de:33:b8:ab:30",
+                            "NetworkInterfaceId": "eni-0056704944cfad228",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-139.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.139",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-139.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.139"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0fefb90f3f227eb88",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "PGBOUNCER-SG",
+                            "GroupId": "sg-0b4e539a196bb1d88"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Cost",
+                            "Value": "PGBOUNCER"
+                        },
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        },
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "PGBOUNCER"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-0f8d0c54f8fdb9109"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0ad42f4f66f6c1cc9",
+                    "InstanceId": "i-0332d459a595fb757",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "nse-vpn-test",
+                    "LaunchTime": "2019-01-04T04:58:50.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-208.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.208",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-13-233-210-79.ap-south-1.compute.amazonaws.com",
+                    "PublicIpAddress": "13.233.210.79",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0831cdedc93e53b8b",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2018-12-15T08:15:22.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-08734719c468a4e05"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "361678243127",
+                                "PublicDnsName": "ec2-13-233-210-79.ap-south-1.compute.amazonaws.com",
+                                "PublicIp": "13.233.210.79"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2018-12-15T08:15:22.000Z",
+                                "AttachmentId": "eni-attach-09de11d3db83b40af",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "Vpn-test-SG",
+                                    "GroupId": "sg-05cff769f0a09d943"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "02:f1:ff:e4:83:ea",
+                            "NetworkInterfaceId": "eni-09102cf164d448952",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-208.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.208",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "361678243127",
+                                        "PublicDnsName": "ec2-13-233-210-79.ap-south-1.compute.amazonaws.com",
+                                        "PublicIp": "13.233.210.79"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-208.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.208"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0831cdedc93e53b8b",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "Vpn-test-SG",
+                            "GroupId": "sg-05cff769f0a09d943"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "NSE-Bastion-Host"
+                        },
+                        {
+                            "Key": "Cost",
+                            "Value": "NSE-Bastion-Host"
+                        },
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-06cc70957e9996b3a"
+        },
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-07f144b8fc7565d76",
+                    "InstanceId": "i-0b83776e42a529409",
+                    "InstanceType": "c5.4xlarge",
+                    "KeyName": "EDB-Postgres1-key",
+                    "LaunchTime": "2019-02-05T10:50:32.000Z",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "ap-south-1b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-32-220-171.ap-south-1.compute.internal",
+                    "PrivateIpAddress": "10.32.220.171",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0fa55f84a98337f9d",
+                    "VpcId": "vpc-06d6fbd9f5761f166",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T13:41:38.000Z",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-05bc8ad8057c60930"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdf",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T14:24:26.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-080832a1c2189d6a6"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdg",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T14:24:42.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-0730f31598d3fb895"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdh",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T14:24:54.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-08e91d92834b3fb9e"
+                            }
+                        },
+                        {
+                            "DeviceName": "/dev/sdi",
+                            "Ebs": {
+                                "AttachTime": "2018-12-19T14:25:05.000Z",
+                                "DeleteOnTermination": false,
+                                "Status": "attached",
+                                "VolumeId": "vol-0f9cdb7a3f688eafa"
+                            }
+                        }
+                    ],
+                    "ClientToken": "",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::361678243127:instance-profile/EC2-S3-FullAccess",
+                        "Id": "AIPAJTSXJIECYG6U3WXEE"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2018-12-19T13:41:37.000Z",
+                                "AttachmentId": "eni-attach-02af082e685c858df",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached"
+                            },
+                            "Description": "Primary network interface",
+                            "Groups": [
+                                {
+                                    "GroupName": "EDB-Postgres1-SG",
+                                    "GroupId": "sg-016d043f6d11284be"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:e6:76:ca:1d:ac",
+                            "NetworkInterfaceId": "eni-0a9fb8ac8757d36f4",
+                            "OwnerId": "361678243127",
+                            "PrivateDnsName": "ip-10-32-220-171.ap-south-1.compute.internal",
+                            "PrivateIpAddress": "10.32.220.171",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-32-220-171.ap-south-1.compute.internal",
+                                    "PrivateIpAddress": "10.32.220.171"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0fa55f84a98337f9d",
+                            "VpcId": "vpc-06d6fbd9f5761f166"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "EDB-Postgres1-SG",
+                            "GroupId": "sg-016d043f6d11284be"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "NSE-UAT-EDB-Postgres2"
+                        },
+                        {
+                            "Key": "Cost",
+                            "Value": "NSE-UAT-EDB-Postgres2"
+                        },
+                        {
+                            "Key": "backupD",
+                            "Value": "BackupDaily"
+                        },
+                        {
+                            "Key": "backupM",
+                            "Value": "BackupMonthly"
+                        },
+                        {
+                            "Key": "backupW",
+                            "Value": "BackupWeekly"
+                        },
+                        {
+                            "Key": "patch",
+                            "Value": "rhel7"
+                        }
+                    ],
+                    "VirtualizationType": "hvm"
+                }
+            ],
+            "OwnerId": "361678243127",
+            "ReservationId": "r-0367519d8fb80512a"
+        }
+    ]
+}
+acc-06@acc:~/nse/patch$ aws ec2 describe-instances --filter "Name=tag-key,Values=patch"
